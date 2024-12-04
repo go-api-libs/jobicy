@@ -1,0 +1,10 @@
+{
+  "id": 219,
+  "emoji": "🌍",
+  "title": "Remote Jobs API/RSS Feed",
+  "description": "Description: Discover and integrate a diverse range of remote job listings with Jobicy's public API, RSS, and XML feeds. This API offers the latest remote job opportunities across various industries and regions, making it a valuable resource for developers and businesses looking to enhance their job feed platforms. Supports filters for job region, industry, and keywords to help you target specific job markets.",
+  "documentation": "https://jobicy.com/jobs-rss-feed",
+  "methods": 1,
+  "health": 65,
+  "source": "https://freepublicapis.com/remote-jobs-api-rss-feed"
+}
