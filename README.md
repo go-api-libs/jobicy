@@ -7,7 +7,7 @@
 ![API Health](https://img.shields.io/badge/API_health-65%25-yellowgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-Description: Discover and integrate a diverse range of remote job listings with Jobicy's public API, RSS, and XML feeds. This API offers the latest remote job opportunities across various industries and regions, making it a valuable resource for developers and businesses looking to enhance their job feed platforms. Supports filters for job region, industry, and keywords to help you target specific job markets. ([Source](https://freepublicapis.com/remote-jobs-api-rss-feed))
+Discover and integrate a diverse range of remote job listings with Jobicy's public API, RSS, and XML feeds. This API offers the latest remote job opportunities across various industries and regions, making it a valuable resource for developers and businesses looking to enhance their job feed platforms. Supports filters for job region, industry, and keywords to help you target specific job markets.
 
 ## Installation
 
