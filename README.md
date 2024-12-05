@@ -19,6 +19,39 @@ go get github.com/go-api-libs/jobicy/pkg/jobicy
 
 ## Usage
 
+### Example: 
+
+```go
+package main
+
+import (
+	"context"
+
+	"github.com/go-api-libs/jobicy/pkg/jobicy"
+)
+
+func main() {
+	c, err := jobicy.NewClient()
+	if err != nil {
+		panic(err)
+	}
+
+	ctx := context.Background()
+	listRemoteJobsOkJSONResponse, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
+		Count:    20,
+		Geo:      "usa",
+		Industry: "marketing",
+		Tag:      "seo",
+	})
+	if err != nil {
+		panic(err)
+	}
+
+	// Use listRemoteJobsOkJSONResponse object
+}
+
+```
+
 ## Additional Information
 
 - [**Go Reference**](https://pkg.go.dev/github.com/go-api-libs/jobicy/pkg/jobicy): The Go reference documentation for the client package.
