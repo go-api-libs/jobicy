@@ -1,0 +1,22 @@
+mode: set
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:38.35,40.2 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:45.123,47.2 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:53.102,56.19 2 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:56.19,59.23 2 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:59.23,61.4 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:63.3,63.28 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:63.28,65.4 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:67.3,67.23 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:67.23,69.4 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:71.3,71.24 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:71.24,73.4 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:75.3,75.26 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:78.2,89.16 3 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:89.16,91.3 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:92.2,94.24 2 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:95.21,97.41 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:98.27,100.71 2 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:100.71,102.5 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:104.4,104.20 1 0
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:105.11,106.49 1 1
+github.com/go-api-libs/jobicy/pkg/jobicy/client.gen.go:108.10,109.47 1 1
