@@ -7,7 +7,7 @@ package jobicy
 import "net/url"
 
 type ListRemoteJobsParams struct {
-	// Number of listings to return
+	// Number of listings to return (default: 50, range: 1-50)
 	Count    int
 	Geo      string
 	Industry string
