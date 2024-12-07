@@ -8,10 +8,13 @@ import "net/url"
 
 type ListRemoteJobsParams struct {
 	// Number of listings to return (default: 50, range: 1-50)
-	Count    int
-	Geo      string
+	Count int
+	// Filter by job region (default: all regions)
+	Geo string
+	// Filter by job category (default: all categories)
 	Industry string
-	Tag      string
+	// Search by job title and description (default: all jobs)
+	Tag string
 }
 
 // JobsResponse defines a model

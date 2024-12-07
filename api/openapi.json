@@ -568,33 +568,6 @@
       }
     },
     "parameters": {
-      "geo": {
-        "name": "geo",
-        "in": "query",
-        "schema": {
-          "type": "string",
-          "example": "usa"
-        },
-        "example": "usa"
-      },
-      "industry": {
-        "name": "industry",
-        "in": "query",
-        "schema": {
-          "type": "string",
-          "example": "marketing"
-        },
-        "example": "marketing"
-      },
-      "tag": {
-        "name": "tag",
-        "in": "query",
-        "schema": {
-          "type": "string",
-          "example": "seo"
-        },
-        "example": "seo"
-      },
       "count": {
         "name": "count",
         "in": "query",
@@ -607,6 +580,36 @@
           "example": 20
         },
         "example": 20
+      },
+      "geo": {
+        "name": "geo",
+        "in": "query",
+        "description": "Filter by job region (default: all regions)",
+        "schema": {
+          "type": "string",
+          "example": "usa"
+        },
+        "example": "usa"
+      },
+      "industry": {
+        "name": "industry",
+        "in": "query",
+        "description": "Filter by job category (default: all categories)",
+        "schema": {
+          "type": "string",
+          "example": "marketing"
+        },
+        "example": "marketing"
+      },
+      "tag": {
+        "name": "tag",
+        "in": "query",
+        "description": "Search by job title and description (default: all jobs)",
+        "schema": {
+          "type": "string",
+          "example": "seo"
+        },
+        "example": "seo"
       }
     }
   },
