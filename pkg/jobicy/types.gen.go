@@ -22,5 +22,4 @@ type ListRemoteJobsOkJSONResponse struct {
 	XRayHash         string   `json:"xRayHash"`
 	ClientKey        string   `json:"clientKey"`
 	LastUpdate       string   `json:"lastUpdate"`
-	Jobs             []Object `json:"jobs"`
 }
