@@ -14,6 +14,9 @@
     "/remote-jobs": {
       "parameters": [
         {
+          "$ref": "#/components/parameters/count"
+        },
+        {
           "$ref": "#/components/parameters/geo"
         },
         {
@@ -21,9 +24,6 @@
         },
         {
           "$ref": "#/components/parameters/tag"
-        },
-        {
-          "$ref": "#/components/parameters/count"
         }
       ],
       "get": {

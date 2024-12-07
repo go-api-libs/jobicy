@@ -56,6 +56,10 @@ func ListRemoteJobs[R any](ctx context.Context, c *Client, params *ListRemoteJob
 	if params != nil {
 		q := make(url.Values, 4)
 
+		if params.Count != 0 {
+			q["count"] = []string{strconv.Itoa(params.Count)}
+		}
+
 		if params.Geo != "" {
 			q["geo"] = []string{params.Geo}
 		}
@@ -66,10 +70,6 @@ func ListRemoteJobs[R any](ctx context.Context, c *Client, params *ListRemoteJob
 
 		if params.Tag != "" {
 			q["tag"] = []string{params.Tag}
-		}
-
-		if params.Count != 0 {
-			q["count"] = []string{strconv.Itoa(params.Count)}
 		}
 
 		u.RawQuery = q.Encode()

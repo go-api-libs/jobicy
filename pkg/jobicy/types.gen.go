@@ -7,10 +7,10 @@ package jobicy
 import "net/url"
 
 type ListRemoteJobsParams struct {
+	Count    int
 	Geo      string
 	Industry string
 	Tag      string
-	Count    int
 }
 
 // JobsResponse defines a model
