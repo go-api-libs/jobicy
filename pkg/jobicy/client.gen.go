@@ -42,8 +42,8 @@ func NewClient() (*Client, error) {
 // ListRemoteJobs defines an operation.
 //
 //	GET /remote-jobs
-func (c *Client) ListRemoteJobs(ctx context.Context, params *ListRemoteJobsParams) (*ListRemoteJobsOkJSONResponse, error) {
-	return ListRemoteJobs[ListRemoteJobsOkJSONResponse](ctx, c, params)
+func (c *Client) ListRemoteJobs(ctx context.Context, params *ListRemoteJobsParams) (*JobsResponse, error) {
+	return ListRemoteJobs[JobsResponse](ctx, c, params)
 }
 
 // ListRemoteJobs defines an operation.

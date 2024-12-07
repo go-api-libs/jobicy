@@ -38,7 +38,7 @@
   },
   "components": {
     "schemas": {
-      "ListRemoteJobsOkJSONResponse": {
+      "JobsResponse": {
         "type": "object",
         "properties": {
           "apiVersion": {
@@ -385,7 +385,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ListRemoteJobsOkJSONResponse"
+              "$ref": "#/components/schemas/JobsResponse"
             },
             "example": {
               "apiVersion": "2.0",

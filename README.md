@@ -37,7 +37,7 @@ func main() {
 	}
 
 	ctx := context.Background()
-	listRemoteJobsOkJSONResponse, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
+	jobsResponse, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
 		Count:    20,
 		Geo:      "usa",
 		Industry: "marketing",
@@ -47,7 +47,7 @@ func main() {
 		panic(err)
 	}
 
-	// Use listRemoteJobsOkJSONResponse object
+	// Use jobsResponse object
 }
 
 ```

@@ -13,8 +13,8 @@ type ListRemoteJobsParams struct {
 	Count    int
 }
 
-// ListRemoteJobsOkJSONResponse defines a model
-type ListRemoteJobsOkJSONResponse struct {
+// JobsResponse defines a model
+type JobsResponse struct {
 	APIVersion       string  `json:"apiVersion"`
 	DocumentationURL url.URL `json:"documentationUrl"`
 	FriendlyNotice   string  `json:"friendlyNotice"`
