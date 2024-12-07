@@ -71,7 +71,7 @@
             "example": "2024-12-04 04:11:04"
           },
           "jobs": {
-            "$ref": "#/components/schemas/ListRemoteJobsOkJSONResponseJobs"
+            "$ref": "#/components/schemas/Jobs"
           }
         },
         "required": [
@@ -261,7 +261,7 @@
           ]
         }
       },
-      "ListRemoteJobsOkJSONResponseJobs": {
+      "Jobs": {
         "type": "array",
         "items": {
           "$ref": "#/components/schemas/Job"

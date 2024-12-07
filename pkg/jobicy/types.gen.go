@@ -15,18 +15,18 @@ type ListRemoteJobsParams struct {
 
 // ListRemoteJobsOkJSONResponse defines a model
 type ListRemoteJobsOkJSONResponse struct {
-	APIVersion       string                           `json:"apiVersion"`
-	DocumentationURL url.URL                          `json:"documentationUrl"`
-	FriendlyNotice   string                           `json:"friendlyNotice"`
-	JobCount         int                              `json:"jobCount"`
-	XRayHash         string                           `json:"xRayHash"`
-	ClientKey        string                           `json:"clientKey"`
-	LastUpdate       string                           `json:"lastUpdate"`
-	Jobs             ListRemoteJobsOkJSONResponseJobs `json:"jobs"`
+	APIVersion       string  `json:"apiVersion"`
+	DocumentationURL url.URL `json:"documentationUrl"`
+	FriendlyNotice   string  `json:"friendlyNotice"`
+	JobCount         int     `json:"jobCount"`
+	XRayHash         string  `json:"xRayHash"`
+	ClientKey        string  `json:"clientKey"`
+	LastUpdate       string  `json:"lastUpdate"`
+	Jobs             Jobs    `json:"jobs"`
 }
 
-// ListRemoteJobsOkJSONResponseJobs defines a model
-type ListRemoteJobsOkJSONResponseJobs []Job
+// Jobs defines a model
+type Jobs []Job
 
 // Job defines a model
 type Job struct {
