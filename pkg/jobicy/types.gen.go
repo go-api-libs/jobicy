@@ -30,23 +30,20 @@ type ListRemoteJobsOkJSONResponseJobs []ListRemoteJobsOkJSONResponseJobsItems
 
 // ListRemoteJobsOkJSONResponseJobsItems defines a model
 type ListRemoteJobsOkJSONResponseJobsItems struct {
-	ID              int                                              `json:"id"`
-	URL             url.URL                                          `json:"url"`
-	JobSlug         string                                           `json:"jobSlug"`
-	JobTitle        string                                           `json:"jobTitle"`
-	CompanyName     string                                           `json:"companyName"`
-	CompanyLogo     url.URL                                          `json:"companyLogo"`
+	ID              int      `json:"id"`
+	URL             url.URL  `json:"url"`
+	JobSlug         string   `json:"jobSlug"`
+	JobTitle        string   `json:"jobTitle"`
+	CompanyName     string   `json:"companyName"`
+	CompanyLogo     url.URL  `json:"companyLogo"`
 	JobIndustry     []string `json:"jobIndustry"`
-	JobType         []string     `json:"jobType"`
-	JobGeo          string                                           `json:"jobGeo"`
-	JobLevel        string                                           `json:"jobLevel"`
-	JobExcerpt      string                                           `json:"jobExcerpt"`
-	JobDescription  string                                           `json:"jobDescription"`
-	PubDate         string                                           `json:"pubDate"`
-	AnnualSalaryMin *string                                          `json:"annualSalaryMin"`
-	AnnualSalaryMax *string                                          `json:"annualSalaryMax"`
-	SalaryCurrency  *string                                          `json:"salaryCurrency"`
+	JobType         []string `json:"jobType"`
+	JobGeo          string   `json:"jobGeo"`
+	JobLevel        string   `json:"jobLevel"`
+	JobExcerpt      string   `json:"jobExcerpt"`
+	JobDescription  string   `json:"jobDescription"`
+	PubDate         string   `json:"pubDate"`
+	AnnualSalaryMin *string  `json:"annualSalaryMin"`
+	AnnualSalaryMax *string  `json:"annualSalaryMax"`
+	SalaryCurrency  *string  `json:"salaryCurrency"`
 }
-
-// ListRemoteJobsOkJSONResponseJobsItemsJobType defines a model
-// ListRemoteJobsOkJSONResponseJobsItemsJobIndustry defines a model
