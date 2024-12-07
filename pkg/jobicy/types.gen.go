@@ -49,7 +49,7 @@ type Job struct {
 	CompanyLogo url.URL `json:"companyLogo"`
 	// Job function (industry)
 	JobIndustry []string `json:"jobIndustry"`
-	// Job type (full-time, contract, part-time or internship)
+	// Job type
 	JobType []string `json:"jobType"`
 	// Geographic restriction for employment (or Anywhere if not applicable)
 	JobGeo string `json:"jobGeo"`

@@ -312,10 +312,16 @@
             }
           },
           "jobType": {
-            "description": "Job type (full-time, contract, part-time or internship)",
+            "description": "Job type",
             "type": "array",
             "items": {
               "type": "string",
+              "enum": [
+                "full-time",
+                "contract",
+                "part-time",
+                "internship"
+              ],
               "example": "full-time"
             }
           },
