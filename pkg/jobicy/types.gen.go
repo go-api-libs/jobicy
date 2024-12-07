@@ -26,10 +26,10 @@ type ListRemoteJobsOkJSONResponse struct {
 }
 
 // ListRemoteJobsOkJSONResponseJobs defines a model
-type ListRemoteJobsOkJSONResponseJobs []ListRemoteJobsOkJSONResponseJobsItems
+type ListRemoteJobsOkJSONResponseJobs []Job
 
-// ListRemoteJobsOkJSONResponseJobsItems defines a model
-type ListRemoteJobsOkJSONResponseJobsItems struct {
+// Job defines a model
+type Job struct {
 	ID              int      `json:"id"`
 	URL             url.URL  `json:"url"`
 	JobSlug         string   `json:"jobSlug"`
