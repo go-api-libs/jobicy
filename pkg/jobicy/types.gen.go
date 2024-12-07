@@ -19,6 +19,7 @@ type ListRemoteJobsParams struct {
 
 // JobsList defines a model
 type JobsList struct {
+	// The version of the API in use
 	APIVersion       string  `json:"apiVersion"`
 	DocumentationURL url.URL `json:"documentationUrl"`
 	FriendlyNotice   string  `json:"friendlyNotice"`
@@ -34,20 +35,36 @@ type Jobs []Job
 
 // Job defines a model
 type Job struct {
-	ID              int      `json:"id"`
-	URL             url.URL  `json:"url"`
-	JobSlug         string   `json:"jobSlug"`
-	JobTitle        string   `json:"jobTitle"`
-	CompanyName     string   `json:"companyName"`
-	CompanyLogo     url.URL  `json:"companyLogo"`
-	JobIndustry     []string `json:"jobIndustry"`
-	JobType         []string `json:"jobType"`
-	JobGeo          string   `json:"jobGeo"`
-	JobLevel        string   `json:"jobLevel"`
-	JobExcerpt      string   `json:"jobExcerpt"`
-	JobDescription  string   `json:"jobDescription"`
-	PubDate         string   `json:"pubDate"`
-	AnnualSalaryMin *string  `json:"annualSalaryMin"`
-	AnnualSalaryMax *string  `json:"annualSalaryMax"`
-	SalaryCurrency  *string  `json:"salaryCurrency"`
+	// Unique Job ID
+	ID int `json:"id"`
+	// Job link
+	URL url.URL `json:"url"`
+	// Job slug
+	JobSlug string `json:"jobSlug"`
+	// Job title
+	JobTitle string `json:"jobTitle"`
+	// Company name
+	CompanyName string `json:"companyName"`
+	// Company logo link
+	CompanyLogo url.URL `json:"companyLogo"`
+	// Job function (industry)
+	JobIndustry []string `json:"jobIndustry"`
+	// Job type (full-time, contract, part-time or internship)
+	JobType []string `json:"jobType"`
+	// Geographic restriction for employment (or Anywhere if not applicable)
+	JobGeo string `json:"jobGeo"`
+	// Seniority level (or Any if not applicable)
+	JobLevel string `json:"jobLevel"`
+	// Excerpt job description (max 55 characters)
+	JobExcerpt string `json:"jobExcerpt"`
+	// Full job description (HTML)
+	JobDescription string `json:"jobDescription"`
+	// Publication date and time
+	PubDate string `json:"pubDate"`
+	// Annual min salary (if applicable)
+	AnnualSalaryMin *string `json:"annualSalaryMin"`
+	// Annual max salary (if applicable)
+	AnnualSalaryMax *string `json:"annualSalaryMax"`
+	// ISO 4217 salary currency code (if applicable)
+	SalaryCurrency *string `json:"salaryCurrency"`
 }
