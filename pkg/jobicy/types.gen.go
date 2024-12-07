@@ -17,8 +17,8 @@ type ListRemoteJobsParams struct {
 	Tag string
 }
 
-// JobsResponse defines a model
-type JobsResponse struct {
+// JobsList defines a model
+type JobsList struct {
 	APIVersion       string  `json:"apiVersion"`
 	DocumentationURL url.URL `json:"documentationUrl"`
 	FriendlyNotice   string  `json:"friendlyNotice"`

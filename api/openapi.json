@@ -30,7 +30,7 @@
         "operationId": "ListRemoteJobs",
         "responses": {
           "200": {
-            "$ref": "#/components/responses/ListRemoteJobsOkResponse"
+            "$ref": "#/components/responses/JobsResponse"
           }
         }
       }
@@ -38,7 +38,7 @@
   },
   "components": {
     "schemas": {
-      "JobsResponse": {
+      "JobsList": {
         "type": "object",
         "properties": {
           "apiVersion": {
@@ -380,12 +380,12 @@
       }
     },
     "responses": {
-      "ListRemoteJobsOkResponse": {
-        "description": "TODO",
+      "JobsResponse": {
+        "description": "Returns a list of jobs",
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/JobsResponse"
+              "$ref": "#/components/schemas/JobsList"
             },
             "example": {
               "apiVersion": "2.0",

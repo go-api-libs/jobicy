@@ -42,8 +42,8 @@ func NewClient() (*Client, error) {
 // ListRemoteJobs defines an operation.
 //
 //	GET /remote-jobs
-func (c *Client) ListRemoteJobs(ctx context.Context, params *ListRemoteJobsParams) (*JobsResponse, error) {
-	return ListRemoteJobs[JobsResponse](ctx, c, params)
+func (c *Client) ListRemoteJobs(ctx context.Context, params *ListRemoteJobsParams) (*JobsList, error) {
+	return ListRemoteJobs[JobsList](ctx, c, params)
 }
 
 // ListRemoteJobs defines an operation.
@@ -93,7 +93,7 @@ func ListRemoteJobs[R any](ctx context.Context, c *Client, params *ListRemoteJob
 
 	switch rsp.StatusCode {
 	case http.StatusOK:
-		// TODO
+		// Returns a list of jobs
 		switch rsp.Header.Get("Content-Type") {
 		case "application/json":
 			var out R
