@@ -15,11 +15,38 @@ type ListRemoteJobsParams struct {
 
 // ListRemoteJobsOkJSONResponse defines a model
 type ListRemoteJobsOkJSONResponse struct {
-	APIVersion       string   `json:"apiVersion"`
-	DocumentationURL url.URL  `json:"documentationUrl"`
-	FriendlyNotice   string   `json:"friendlyNotice"`
-	JobCount         int      `json:"jobCount"`
-	XRayHash         string   `json:"xRayHash"`
-	ClientKey        string   `json:"clientKey"`
-	LastUpdate       string   `json:"lastUpdate"`
+	APIVersion       string                           `json:"apiVersion"`
+	DocumentationURL url.URL                          `json:"documentationUrl"`
+	FriendlyNotice   string                           `json:"friendlyNotice"`
+	JobCount         int                              `json:"jobCount"`
+	XRayHash         string                           `json:"xRayHash"`
+	ClientKey        string                           `json:"clientKey"`
+	LastUpdate       string                           `json:"lastUpdate"`
+	Jobs             ListRemoteJobsOkJSONResponseJobs `json:"jobs"`
 }
+
+// ListRemoteJobsOkJSONResponseJobs defines a model
+type ListRemoteJobsOkJSONResponseJobs []ListRemoteJobsOkJSONResponseJobsItems
+
+// ListRemoteJobsOkJSONResponseJobsItems defines a model
+type ListRemoteJobsOkJSONResponseJobsItems struct {
+	ID              int                                              `json:"id"`
+	URL             url.URL                                          `json:"url"`
+	JobSlug         string                                           `json:"jobSlug"`
+	JobTitle        string                                           `json:"jobTitle"`
+	CompanyName     string                                           `json:"companyName"`
+	CompanyLogo     url.URL                                          `json:"companyLogo"`
+	JobIndustry     []string `json:"jobIndustry"`
+	JobType         []string     `json:"jobType"`
+	JobGeo          string                                           `json:"jobGeo"`
+	JobLevel        string                                           `json:"jobLevel"`
+	JobExcerpt      string                                           `json:"jobExcerpt"`
+	JobDescription  string                                           `json:"jobDescription"`
+	PubDate         string                                           `json:"pubDate"`
+	AnnualSalaryMin *string                                          `json:"annualSalaryMin"`
+	AnnualSalaryMax *string                                          `json:"annualSalaryMax"`
+	SalaryCurrency  *string                                          `json:"salaryCurrency"`
+}
+
+// ListRemoteJobsOkJSONResponseJobsItemsJobType defines a model
+// ListRemoteJobsOkJSONResponseJobsItemsJobIndustry defines a model
