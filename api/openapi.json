@@ -598,8 +598,12 @@
       "count": {
         "name": "count",
         "in": "query",
+        "description": "Number of listings to return",
         "schema": {
           "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "default": 50,
           "example": 20
         },
         "example": 20
