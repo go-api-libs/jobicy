@@ -74,3 +74,8 @@ type JobTypes []JobType
 
 // JobType defines a model
 type JobType string
+
+const JobTypeFullTime JobType = "full-time"
+const JobTypeContract JobType = "contract"
+const JobTypePartTime JobType = "part-time"
+const JobTypeInternship JobType = "internship"
