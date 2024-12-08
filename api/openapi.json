@@ -391,7 +391,7 @@
         }
       },
       "JobTypes": {
-        "description": "Job type",
+        "description": "An array of job types",
         "type": "array",
         "items": {
           "$ref": "#/components/schemas/JobType"

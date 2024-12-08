@@ -49,7 +49,7 @@ type Job struct {
 	CompanyLogo url.URL `json:"companyLogo"`
 	// Job function (industry)
 	JobIndustry []string `json:"jobIndustry"`
-	// Job type
+	// An array of job types
 	JobType JobTypes `json:"jobType"`
 	// Geographic restriction for employment (or Anywhere if not applicable)
 	JobGeo string `json:"jobGeo"`
@@ -69,7 +69,7 @@ type Job struct {
 	SalaryCurrency *string `json:"salaryCurrency"`
 }
 
-// Job type
+// An array of job types
 type JobTypes []JobType
 
 // JobType defines a model
