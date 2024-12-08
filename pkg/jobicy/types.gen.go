@@ -70,7 +70,7 @@ type Job struct {
 }
 
 // Job type
-type JobTypes []JobTypesItems
+type JobTypes []JobType
 
-// JobTypesItems defines a model
-type JobTypesItems string
+// JobType defines a model
+type JobType string

@@ -394,10 +394,10 @@
         "description": "Job type",
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/JobTypesItems"
+          "$ref": "#/components/schemas/JobType"
         }
       },
-      "JobTypesItems": {
+      "JobType": {
         "type": "string",
         "enum": [
           "full-time",
