@@ -50,7 +50,7 @@ type Job struct {
 	// Job function (industry)
 	JobIndustry []string `json:"jobIndustry"`
 	// Job type
-	JobType []string `json:"jobType"`
+	JobType JobJobType `json:"jobType"`
 	// Geographic restriction for employment (or Anywhere if not applicable)
 	JobGeo string `json:"jobGeo"`
 	// Seniority level (or Any if not applicable)
@@ -68,3 +68,5 @@ type Job struct {
 	// ISO 4217 salary currency code (if applicable)
 	SalaryCurrency *string `json:"salaryCurrency"`
 }
+
+// Job type
