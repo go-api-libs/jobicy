@@ -50,7 +50,7 @@ type Job struct {
 	// Job function (industry)
 	JobIndustry []string `json:"jobIndustry"`
 	// Job type
-	JobType JobJobType `json:"jobType"`
+	JobType JobType `json:"jobType"`
 	// Geographic restriction for employment (or Anywhere if not applicable)
 	JobGeo string `json:"jobGeo"`
 	// Seniority level (or Any if not applicable)

@@ -312,7 +312,7 @@
             }
           },
           "jobType": {
-            "$ref": "#/components/schemas/JobJobType"
+            "$ref": "#/components/schemas/JobType"
           },
           "jobGeo": {
             "description": "Geographic restriction for employment (or Anywhere if not applicable)",
@@ -390,7 +390,7 @@
           "pubDate": "2024-12-01 04:10:21"
         }
       },
-      "JobJobType": {
+      "JobType": {
         "description": "Job type",
         "type": "array",
         "items": {
