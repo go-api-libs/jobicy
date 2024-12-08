@@ -3,7 +3,7 @@
 [![Official Documentation](https://img.shields.io/badge/docs-API-blue)](https://jobicy.com/jobs-rss-feed)
 [![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1-blue)](/api/openapi.json)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-api-libs/jobicy)](https://goreportcard.com/report/github.com/go-api-libs/jobicy)
-![Code Coverage](https://img.shields.io/badge/coverage-61%25-yellowgreen)
+![Code Coverage](https://img.shields.io/badge/coverage-57%25-yellow)
 ![API Health](https://img.shields.io/badge/API_health-65%25-yellowgreen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 

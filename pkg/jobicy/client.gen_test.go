@@ -148,4 +148,57 @@ func TestClient_VCR(t *testing.T) {
 			t.Fatal("result is nil")
 		}
 	})
+
+	t.Run("2024-12-08", func(t *testing.T) {
+		replay(t, "../../pkg/jobicy/vcr/2024-12-08")
+
+		{
+			res, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
+				Count: 20,
+				Tag:   "python",
+			})
+			if err != nil {
+				t.Fatal(err)
+			} else if res == nil {
+				t.Fatal("result is nil")
+			}
+		}
+
+		{
+			res, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
+				Count: 15,
+				Geo:   "canada",
+			})
+			if err != nil {
+				t.Fatal(err)
+			} else if res == nil {
+				t.Fatal("result is nil")
+			}
+		}
+
+		{
+			res, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
+				Count:    30,
+				Geo:      "usa",
+				Industry: "copywriting",
+			})
+			if err != nil {
+				t.Fatal(err)
+			} else if res == nil {
+				t.Fatal("result is nil")
+			}
+		}
+
+		{
+			res, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
+				Count:    10,
+				Industry: "supporting",
+			})
+			if err != nil {
+				t.Fatal(err)
+			} else if res == nil {
+				t.Fatal("result is nil")
+			}
+		}
+	})
 }
