@@ -312,7 +312,7 @@
             }
           },
           "jobType": {
-            "$ref": "#/components/schemas/JobType"
+            "$ref": "#/components/schemas/JobTypes"
           },
           "jobGeo": {
             "description": "Geographic restriction for employment (or Anywhere if not applicable)",
@@ -390,19 +390,22 @@
           "pubDate": "2024-12-01 04:10:21"
         }
       },
-      "JobType": {
+      "JobTypes": {
         "description": "Job type",
         "type": "array",
         "items": {
-          "type": "string",
-          "enum": [
-            "full-time",
-            "contract",
-            "part-time",
-            "internship"
-          ],
-          "example": "full-time"
+          "$ref": "#/components/schemas/JobTypesItems"
         }
+      },
+      "JobTypesItems": {
+        "type": "string",
+        "enum": [
+          "full-time",
+          "contract",
+          "part-time",
+          "internship"
+        ],
+        "example": "full-time"
       }
     },
     "responses": {
