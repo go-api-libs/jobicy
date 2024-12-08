@@ -1,4 +1,4 @@
-# 🌍 Remote Jobs API/RSS Feed
+# 🌍 Remote Jobs API
 [![Go Reference](https://pkg.go.dev/badge/github.com/go-api-libs/jobicy.svg)](https://pkg.go.dev/github.com/go-api-libs/jobicy/pkg/jobicy)
 [![Official Documentation](https://img.shields.io/badge/docs-API-blue)](https://jobicy.com/jobs-rss-feed)
 [![OpenAPI](https://img.shields.io/badge/OpenAPI-3.1-blue)](/api/openapi.json)
