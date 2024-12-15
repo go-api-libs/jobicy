@@ -20,14 +20,14 @@ type ListRemoteJobsParams struct {
 // JobsList defines a model
 type JobsList struct {
 	// The version of the API in use
-	APIVersion       string  `json:"apiVersion"`
-	DocumentationURL url.URL `json:"documentationUrl"`
-	FriendlyNotice   string  `json:"friendlyNotice"`
-	JobCount         int     `json:"jobCount"`
-	XRayHash         string  `json:"xRayHash"`
-	ClientKey        string  `json:"clientKey"`
-	LastUpdate       string  `json:"lastUpdate"`
-	Jobs             Jobs    `json:"jobs"`
+	APIVersion       string  `json:"apiVersion,omitzero"`
+	DocumentationURL url.URL `json:"documentationUrl,omitzero"`
+	FriendlyNotice   string  `json:"friendlyNotice,omitzero"`
+	JobCount         int     `json:"jobCount,omitzero"`
+	XRayHash         string  `json:"xRayHash,omitzero"`
+	ClientKey        string  `json:"clientKey,omitzero"`
+	LastUpdate       string  `json:"lastUpdate,omitzero"`
+	Jobs             Jobs    `json:"jobs,omitempty"`
 }
 
 // Jobs defines a model
@@ -36,37 +36,37 @@ type Jobs []Job
 // Job defines a model
 type Job struct {
 	// Unique Job ID
-	ID int `json:"id"`
+	ID int `json:"id,omitzero"`
 	// Job link
-	URL url.URL `json:"url"`
+	URL url.URL `json:"url,omitzero"`
 	// Job slug
-	JobSlug string `json:"jobSlug"`
+	JobSlug string `json:"jobSlug,omitzero"`
 	// Job title
-	JobTitle string `json:"jobTitle"`
+	JobTitle string `json:"jobTitle,omitzero"`
 	// Company name
-	CompanyName string `json:"companyName"`
+	CompanyName string `json:"companyName,omitzero"`
 	// Company logo link
-	CompanyLogo url.URL `json:"companyLogo"`
+	CompanyLogo url.URL `json:"companyLogo,omitzero"`
 	// Job function (industry)
-	JobIndustry []string `json:"jobIndustry"`
+	JobIndustry []string `json:"jobIndustry,omitempty"`
 	// An array of job types
-	JobType JobTypes `json:"jobType"`
+	JobType JobTypes `json:"jobType,omitempty"`
 	// Geographic restriction for employment (or Anywhere if not applicable)
-	JobGeo string `json:"jobGeo"`
+	JobGeo string `json:"jobGeo,omitzero"`
 	// Seniority level (or Any if not applicable)
-	JobLevel string `json:"jobLevel"`
+	JobLevel string `json:"jobLevel,omitzero"`
 	// Excerpt job description (max 55 characters)
-	JobExcerpt string `json:"jobExcerpt"`
+	JobExcerpt string `json:"jobExcerpt,omitzero"`
 	// Full job description (HTML)
-	JobDescription string `json:"jobDescription"`
+	JobDescription string `json:"jobDescription,omitzero"`
 	// Publication date and time
-	PubDate string `json:"pubDate"`
+	PubDate string `json:"pubDate,omitzero"`
 	// Annual min salary (if applicable)
-	AnnualSalaryMin *string `json:"annualSalaryMin"`
+	AnnualSalaryMin *string `json:"annualSalaryMin,omitempty"`
 	// Annual max salary (if applicable)
-	AnnualSalaryMax *string `json:"annualSalaryMax"`
+	AnnualSalaryMax *string `json:"annualSalaryMax,omitempty"`
 	// ISO 4217 salary currency code (if applicable)
-	SalaryCurrency *string `json:"salaryCurrency"`
+	SalaryCurrency *string `json:"salaryCurrency,omitempty"`
 }
 
 // An array of job types

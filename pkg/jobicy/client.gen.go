@@ -9,10 +9,15 @@ import (
 	"net/http"
 	"net/url"
 	"strconv"
+	"strings"
 
 	"github.com/MarkRosemaker/jsonutil"
 	"github.com/go-api-libs/api"
 	"github.com/go-json-experiment/json"
+)
+
+const (
+	userAgent = "JobicyGoAPILibrary/1.0.0 (https://github.com/go-api-libs/jobicy)"
 )
 
 var (
@@ -76,7 +81,7 @@ func ListRemoteJobs[R any](ctx context.Context, c *Client, params *ListRemoteJob
 	}
 
 	req := (&http.Request{
-		Header:     http.Header{},
+		Header:     http.Header{"User-Agent": []string{userAgent}},
 		Host:       u.Host,
 		Method:     http.MethodGet,
 		Proto:      "HTTP/1.1",
@@ -94,7 +99,7 @@ func ListRemoteJobs[R any](ctx context.Context, c *Client, params *ListRemoteJob
 	switch rsp.StatusCode {
 	case http.StatusOK:
 		// Returns a list of jobs
-		switch rsp.Header.Get("Content-Type") {
+		switch mt, _, _ := strings.Cut(rsp.Header.Get("Content-Type"), ";"); mt {
 		case "application/json":
 			var out R
 			if err := json.UnmarshalRead(rsp.Body, &out, jsonOpts); err != nil {
