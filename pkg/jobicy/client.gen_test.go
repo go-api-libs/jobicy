@@ -186,7 +186,7 @@ func TestClient_VCR(t *testing.T) {
 	}
 
 	t.Run("2024-12-05", func(t *testing.T) {
-		replay(t, "../../pkg/jobicy/vcr/2024-12-05")
+		replay(t, "vcr/2024-12-05")
 
 		res, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
 			Count:    20,
@@ -202,7 +202,7 @@ func TestClient_VCR(t *testing.T) {
 	})
 
 	t.Run("2024-12-08", func(t *testing.T) {
-		replay(t, "../../pkg/jobicy/vcr/2024-12-08")
+		replay(t, "vcr/2024-12-08")
 
 		{
 			res, err := c.ListRemoteJobs(ctx, &jobicy.ListRemoteJobsParams{
